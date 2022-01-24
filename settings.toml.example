@@ -5,6 +5,7 @@ dynaconf_include = ["app/config/*.toml"]
 APP_NAME=''
 SECRET_KEY=''
 APP_URL=''
+APP_DIR=''
 
 #### Database
 DB_CONNECTION='sqlite'

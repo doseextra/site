@@ -1,6 +1,5 @@
 ### Global variables
 [default]
-APP_DIR = "@format {env[PWD]}/"
 VIEWS_DIR = "app/resources/views/"
 STATIC_DIR = "app/public/static"
 MODELS_DIR = "app/database/models"
