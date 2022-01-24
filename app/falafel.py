@@ -2,9 +2,12 @@ from flask import Flask
 from flask_cors import CORS
 from dynaconf import settings
 from app.core import configuration
+from app.utils.helpers import get_absolute_path
 
-static_dir = settings.get("APP_DIR") + settings.get("STATIC_DIR")
-views_dir = settings.get("APP_DIR") + settings.get("VIEWS_DIR")
+static_dir = get_absolute_path(settings.get("STATIC_DIR"))
+views_dir = get_absolute_path(settings.get("VIEWS_DIR"))
+
+print(static_dir, views_dir)
 
 def construct(**config):
     app = Flask(__name__, static_folder=static_dir, template_folder=views_dir)

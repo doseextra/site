@@ -18,3 +18,10 @@ def time_serial(datetime):
 
 def http_error(error=404, message='Not found!'):
     return abort(make_response(jsonify({'status': 'error', 'message': message}), error))
+
+def get_app_dir():
+    import os
+    return os.getcwd()
+
+def get_absolute_path(path):
+    return get_app_dir() + "/" + path
