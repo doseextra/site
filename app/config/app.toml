@@ -5,6 +5,7 @@ EXTENSIONS = [
   "app.core.globals:init_app",
   "app.http.routes.api_routes:init_app",
   "app.http.routes.web_routes:init_app",
+  "app.http.routes.blog_routes:init_app",
 ]
 
 [development]
