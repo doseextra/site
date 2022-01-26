@@ -1,0 +1,88 @@
+footer {
+  display: flex;
+  justify-content: center;
+
+  .menu {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 33% 16% 16% 25%;
+    column-gap: calc(10% / 3);
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      .footer-links {
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          li {
+            font-size: var(--text-size);
+          }
+        }
+      }
+      &.about {
+        .description {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          p {
+            font-weight: 400;
+            color: var(--text-color);
+          }
+          .social {
+            ul {
+              display: flex;
+              gap: 0.5rem;
+              a {
+                svg {
+                  width: 1.2rem;
+                  height: 1.2rem;
+                }
+
+                &:hover {
+                  svg {
+                    fill: var(--primary-color)!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.contact {
+        address {
+          font-style: normal;
+          font-size: var(--text-size);
+          margin-bottom: 0.5rem;
+        }
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .legal {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    .important {
+      ul {
+        display: flex;
+        li {
+          a {
+            font-size: 0.9rem;
+            letter-spacing: -0.02rem;
+            line-height: 1.5rem;
+            padding: 0.2rem 0.5rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
