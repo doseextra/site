@@ -1,0 +1,190 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="blog-list">
+  <section class="list-header container">
+    <h1 class="title">
+      Blog da Dose
+    </h1>
+    <div class="description">
+      <p>
+        Our features, journey, tips and us being us. Lorem ipsum dolor sit amet, accumsan in, tempor dictum neque.
+      </p>
+    </div>
+    <div class="search">
+      <form role="search" method="get" action="/">
+        <div class="form-item">
+          <input type="search" class="search-input" placeholder="Search..." value="" name="s" title="Search for:" />
+          <input type="hidden" class="form-control" name="post_type" value="post">
+        </div>
+        <div class="form-item">
+          <button class="primary" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="loop-items container">
+    <div class="blog-categories">
+      <ul class="categories">
+        <li class="category">
+          <a class="link" href="">
+            All
+          </a>
+        </li>
+        <li class="category">
+          <a class="link" href="">
+            SEO
+          </a>
+        </li>
+        <li class="category">
+          <a class="link" href="">
+            Instagram
+          </a>
+        </li>
+        <li class="category">
+          <a class="link" href="">
+            Facebook
+          </a>
+        </li>
+        <li class="category">
+          <a class="link" href="">
+            Identidade visual
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="featured-item">
+      <article>
+        <div class="item-image">
+          <a href="">
+            <figure>
+              <picture>
+                <img src="{{ app_url }}static/images/lorem.jpg" alt="">
+              </picture>
+            </figure>
+          </a>
+        </div>
+        <div class="item-content">
+          <div class="item-category">
+            <a href="" rel="category tag">
+              SEO
+            </a>
+          </div>
+          <div class="item-title">
+            <h2>
+              <a href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </a>
+            </h2>
+          </div>
+          <div class="item-excerpt">
+            <p>
+              Our features, journey, tips and us being us. Lorem ipsum dolor sit amet, accumsan in, tempor dictum neque.
+            </p>
+          </div>
+          <div class="item-meta">
+            <div class="author">
+              <div class="avatar">
+                <figure>
+                  <picture>
+                    <img src="https://avatars.githubusercontent.com/u/15989303?v=4" alt="">
+                  </picture>
+                </figure>
+              </div>
+              <div class="author-info">
+                <h5>
+                  Régis Tomkiel
+                </h5>
+                <div class="date">
+                  <time datetime="2020-01-01">
+                    January 1, 2020
+                  </time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="recent-items">
+      <article class="blog-item">
+        <div class="item-image">
+          <a href="">
+            <figure>
+              <picture>
+                <img src="{{ app_url }}static/images/lorem.jpg" alt="">
+              </picture>
+            </figure>
+          </a>
+        </div>
+        <div class="item-content">
+          <div class="item-category">
+            <a href="" rel="category tag">
+              SEO
+            </a>
+          </div>
+          <div class="item-title">
+            <h3>
+              <a href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </a>
+            </h3>
+          </div>
+          <div class="item-excerpt">
+            <p>
+              Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...
+            </p>
+          </div>
+          <div class="item-meta">
+            <div class="author">
+              <div class="avatar">
+                <figure>
+                  <picture>
+                    <img src="https://avatars.githubusercontent.com/u/15989303?v=4" alt="">
+                  </picture>
+                </figure>
+              </div>
+              <div class="author-info">
+                <h5>
+                  Régis Tomkiel
+                </h5>
+                <div class="date">
+                  <time datetime="2020-01-01">
+                    January 1, 2020
+                  </time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <section class="paginate">
+    <ul class="paginate-items" aria-label="Post pagination">
+      <li class="page-item">
+        <a href="">
+          « Anterior
+        </a>
+      </li>
+      <li class="page-item active">
+        <span>1</span>
+      </li>
+      <li class="page-item">
+        <a href="">2</a>
+      </li>
+      <li class="page-item">
+        <a href="">
+          Avançar »
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+  {% include 'partials/banner/two-columns.html' %}
+</div>
+{% endblock %}

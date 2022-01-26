@@ -1,0 +1,51 @@
+<header>
+  <nav>
+    <div class="brand">
+      <a href="{{ app_url }}" class="link">
+        <figure>
+          <picture>
+            <source srcset="{{ app_url }}/static/images/doseextra-152x37.webp" type="image/webp">
+            <source srcset="{{ app_url }}/static/images/doseextra-152x37.png" type="image/png">
+            <img src="{{ app_url }}/static/images/doseextra-152x37.png" alt="{{ app_name }} logo" width="120">
+          </picture>
+        </figure>
+      </a>
+    </div>
+    <div class="content">
+      <ul class="menu-links">
+        <li class="menu-item">
+          <a class="link" href="">
+            Home
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="">
+            About
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div class="search">
+        <form role="search" method="get" class="search-form" action="">
+          <span class="search-icon">
+            <i class="fe fe-search"></i>
+          </span>
+          <input type="search" class="search-input" placeholder="Search Courses" value="" name="s" title="Search for:">
+          <input type="hidden" name="post_type" value="courses">
+        </form>
+      </div>
+      <div class="account">
+        <a href="" class="btn signin white">
+          Sign In
+        </a>
+        <a href="" class="btn signup primary">
+          Sing Up
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
